@@ -16,6 +16,19 @@ uvicorn main:app --reload
 
 <br>
 
+## Testing
+
+`test_main.py` 라는 이름의 파일에 정의된 테스트를 수행한다.
+
+```bash
+pytest -v --cache-clear
+```
+
+- `-v`: 상세 보기
+- `--cache-clear`: 모든 캐시 지우기
+
+<br>
+
 ## Fast API 장점
 
 - 비동기식이기 때문에 I/O 병목이 대부분인 웹 서버에서 빠른 성능을 보여준다.
