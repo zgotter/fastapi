@@ -3,17 +3,25 @@
 {% block title %}FastAPI Starter{% endblock %}
 
 {% block head %}
-{{ super() }} <!-- load the parent contents -->
+{{ super() }}
 {% endblock %}
 
 {% block page_content %}
 
 {% include "include/sidebar.html" %}
-<h1>
+<!-- <h1>
     Welcome to FastAPI Starter.
 </h1>
 
-{{data.page}}
+{{data.page}} -->
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col">
+            {{data.text|safe}}
+        </div>
+    </div>
+</main>
 
 {% endblock %}
 
